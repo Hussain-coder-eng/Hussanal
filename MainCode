@@ -10,7 +10,7 @@ def print_menu():
   print("How to play: Type a 5 letter word below and press enter.You have 6 tries to guess the word.")
   print("If letter in currect position, it will be green.") 
   print("If letter is in word but not in correct position, it will be yellow.")
-print("If the letter is not in the word it will be red.\n")
+  print("If the letter is not in the word it will be red.\n")
 
 
 def read_random_word():
@@ -25,7 +25,7 @@ print_menu()
 play_again = ""
 while play_again !="q":
   #word = read_random_word()
- word = random.choice(words_five)
+  word = random.choice(words_five)
   
   for attempt in range(1,7):
     guess = input().lower()
@@ -48,4 +48,6 @@ while play_again !="q":
     elif attempt == 6:
       print(f"Sorry the wordle was.. {word}")
   play_again = input("Want to play again? Type q to exit.")
+  
+  
   
